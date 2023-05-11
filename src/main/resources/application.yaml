@@ -1,0 +1,8 @@
+quarkus:
+  tls:
+    trust-all: true
+  rest-client:
+    employee-service:
+      url: "http://localhost:8082/"
+      scope: jakarta.inject.Singleton
+      hostname-verifier: io.quarkus.restclient.NoopHostnameVerifier
